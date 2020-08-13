@@ -1,0 +1,14 @@
+<% include ./partials/messages %>
+<form action="./otpcheck" method="POST">
+  <div class="form-group">
+    <label for="OTP">Enter OTP send on your <%= user.email %> </label>
+    <input
+      type="text"
+      id="otp"
+      name="otp"
+      class="form-control"
+      placeholder="Enter OTP"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Login</button>
+</form>
